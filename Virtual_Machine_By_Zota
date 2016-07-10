@@ -1,0 +1,11 @@
+
+sudo virt-install
+–connect qemu:///system
+-n KVM-Ubuntu
+-r 1024 
+–os-type linux
+–os-variant ubuntu
+–hvm
+–cdrom /home/pfelab/Descargas/ubuntu-16.04-desktop-amd64.iso
+–network network:default
+–disk path=/home/pfelab/vms/ubuntu.img,size=20
